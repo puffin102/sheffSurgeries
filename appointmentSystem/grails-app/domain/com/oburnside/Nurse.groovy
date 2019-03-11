@@ -4,10 +4,17 @@ class Nurse {
 
 String nurseName
 String qualifications
-String nurseEmails
+String nurseEmail
 String nurseOffice
 int nursePhone
 
     static constraints = {
+
+nurseName blank: false, nullable: false, maxSize: 25
+qualifications blank: false, nullable: false, maxSize: 100
+nurseEmail blank: false, nullable: false, maxSize: 50, email: true
+nurseOffice blank: false, nullable: false, size: 5..5
+nursePhone blank: false, nullable: false, max: 11
+
     }
 }
