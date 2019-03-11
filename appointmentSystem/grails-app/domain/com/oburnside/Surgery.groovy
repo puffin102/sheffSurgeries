@@ -8,8 +8,16 @@ String postcode
 int telephone
 int numberOfPatients
 String description
-double openingTime
+String openingTime
 
     static constraints = {
+
+name blank: false, nullable: false, maxSize: 25
+address blank: false, nullable: false, maxSize: 50
+postcode blank: false, nullable: false, maxSize: 8
+telephone blank: false, nullable: false, max: 11
+numberOfPatients blank: false, nullable: false, max: 11
+description blank: false, nullable: false, maxSize: 100
+openingTime blank: false, nullable: false, max: 100
     }
 }
