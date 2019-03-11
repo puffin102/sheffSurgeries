@@ -1,6 +1,6 @@
-package appointmentsystem
+package com.oburnside
 
 class DoctorController {
 
-    def index() { }
+    def scaffold = Doctor
 }

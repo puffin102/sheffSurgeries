@@ -8,7 +8,7 @@ String patientResidence
 Date patientDOB
 String patientID
 Date dateRegistered
-int patientPhone
+String patientPhone
 
     static constraints = {
 
@@ -18,6 +18,6 @@ patientResidence blank: false, nullable: false, maxSize: 25
 patientDOB blank: false, nullable: false
 patientID blank: false, nullable: false
 dateRegistered blank: false, nullable: false, maxSize: 25
-patientPhone blank: false, nullable: false, max: 11
+patientPhone blank: false, nullable: false, size: 11..11
     }
 }

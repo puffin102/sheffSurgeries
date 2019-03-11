@@ -6,7 +6,7 @@ String nurseName
 String qualifications
 String nurseEmail
 String nurseOffice
-int nursePhone
+String nursePhone
 
     static constraints = {
 
@@ -14,7 +14,7 @@ nurseName blank: false, nullable: false, maxSize: 25
 qualifications blank: false, nullable: false, maxSize: 100
 nurseEmail blank: false, nullable: false, maxSize: 50, email: true
 nurseOffice blank: false, nullable: false, size: 5..5
-nursePhone blank: false, nullable: false, max: 11
+nursePhone blank: false, nullable: false, size: 11..11
 
     }
 }
