@@ -5,9 +5,9 @@ class Patient {
 String patientName
 String patientAddress
 String patientResidence
-date patientDOB
+Date patientDOB
 String patientID
-date dateRegistered
+Date dateRegistered
 int patientPhone
 
     static constraints = {
