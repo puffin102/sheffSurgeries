@@ -3,7 +3,7 @@ package com.oburnside
 class Prescription {
 
 String pharmacyName
-long prescripNumber
+String prescripNumber
 String medicine
 float totalCost
 Date dateIssued
@@ -12,9 +12,9 @@ Boolean patientPaying
     static constraints = {
 
 pharmacyName blank: false, nullable: false, maxSize: 30
-prescripNumber blank: false, nullable: false, max: 10
+prescripNumber blank: false, nullable: false, maxSize: 10
 medicine blank: false, nullable: false, maxSize: 50
-totalCost blank: false, nullable: false
+totalCost blank: false, nullable: false, scale: 2
 dateIssued blank: false, nullable: false
 patientPaying blank: false, nullable: false
 

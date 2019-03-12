@@ -1,4 +1,4 @@
-package appointmentsystem
+package com.oburnside
 
 class UrlMappings {
 
