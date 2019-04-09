@@ -7,6 +7,12 @@ float appTime
 int appDuration
 String roomNumber
 
+
+static hasMany=[doctors: Doctor]
+static hasOne=[patients: Patient, surgeries: Surgery]
+
+
+
     static constraints = {
 
 appDate blank: false, nullable: false

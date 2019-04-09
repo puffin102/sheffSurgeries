@@ -9,6 +9,8 @@ float totalCost
 Date dateIssued
 Boolean patientPaying
 
+static hasMany=[doctors: Doctor, patients: Patient]
+
     static constraints = {
 
 pharmacyName blank: false, nullable: false, maxSize: 30

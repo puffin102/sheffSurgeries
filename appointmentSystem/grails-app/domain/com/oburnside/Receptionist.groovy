@@ -8,6 +8,8 @@ String recepUsername
 String recepPassword
 String recepPhone
 
+static hasMany=[surgeries: Surgery]
+
     static constraints = {
 
 recepName blank: false, nullable: false, maxSize: 25
